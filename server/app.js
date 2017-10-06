@@ -1,5 +1,5 @@
 const PORT = process.env.PORT || 8000;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/test';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/temp';
 
 // REQUIRES
 require('dotenv').config({ silent: true });
