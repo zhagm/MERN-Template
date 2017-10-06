@@ -20,6 +20,9 @@ module.exports = {
       devtools: 'inline-source-map'
     })
   ],
+  devServer: {
+    historyApiFallback: true
+  },
   module: {
     loaders: [
       {

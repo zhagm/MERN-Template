@@ -45,6 +45,11 @@ app.get('/', (req, res) => {
   res.sendFile(path.resolve('index.html'));
 });
 
+// for reloading routes
+app.use('*', function (request, response) {
+  response.sendFile(path.join(__dirname, '../build/index.html'));
+});
+
 // SERVER LISTEN
 app.listen(PORT, err => {
   console.log(err || `Server listening on port ${PORT}`)
